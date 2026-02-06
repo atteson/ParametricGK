@@ -1,0 +1,4 @@
+name = "ParametricGK"
+uuid = "39a154e9-52c8-4dc5-b815-37c365124646"
+version = "0.1.0"
+authors = ["Kevin Atteson <kevin@atteson.com>"]
