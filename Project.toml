@@ -2,3 +2,15 @@ name = "ParametricGK"
 uuid = "39a154e9-52c8-4dc5-b815-37c365124646"
 version = "0.1.0"
 authors = ["Kevin Atteson <kevin@atteson.com>"]
+
+[deps]
+CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+QuadGK = "1fd47b50-473d-5c70-9696-f719f8f3bcdc"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+
+[compat]
+CUDA = "5.9.6"
+LinearAlgebra = "1.12.0"
+QuadGK = "2.11.2"
+SparseArrays = "1.12.0"
