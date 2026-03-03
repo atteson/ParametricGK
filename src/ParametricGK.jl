@@ -12,6 +12,18 @@ const newaxis = [CartesianIndex()]
 arrayfunction( ::CuArray ) = cu
 arrayfunction( ::AbstractArray ) = Array
 
+@doc raw"""
+`parametricGK( f, params, as, bs; rtol = 1e-8, atol = 1e-8, nintervals = 100_000 )`
+
+Numerically solves a ``\int_{a[i]}^{b[i]} f( x[i], y ) dy`` for `i ∈ 1:length(params)`.
+
+# Arguments
+* `f`: The function to integrate
+* `params`: A vector of parameters to use as the first argument of the function
+* `as`: A vector of lower limits of integration of the 2nd argument of the function
+* `bs`: A vector of upper limits of integration of the 2nd argument of the function
+
+"""
 function parametricGK( f, params, as, bs;
                        rtol = 1e-8,
                        atol = 1e-8,
