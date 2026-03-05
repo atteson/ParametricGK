@@ -15,7 +15,11 @@ arrayfunction( ::AbstractArray ) = Array
 @doc raw"""
 `parametricGK( f, params, as, bs; rtol = 1e-8, atol = 1e-8, nintervals = 100_000 )`
 
-Numerically computes a ``\int_{a[i]}^{b[i]} f( x[i], y ) dy`` for `i ∈ 1:length(params)`.
+Numerically computes:
+
+$$\int_{a[i]}^{b[i]} f( x[i], y ) dy$$
+
+for `i ∈ 1:length(params)`.
 
 # Arguments
 * `f`: The function to integrate

@@ -5,7 +5,13 @@
 
 `parametricGK( f, params, as, bs; rtol = 1e-8, atol = 1e-8, nintervals = 100_000 )`
 
-Numerically computes a $\int_{a[i]}^{b[i]} f( x[i], y ) dy$ for `i ∈ 1:length(params)`.
+Numerically computes:
+
+$$
+\int_{a[i]}^{b[i]} f( x[i], y ) dy
+$$
+
+for `i ∈ 1:length(params)`.
 
 **Arguments**
 
@@ -15,5 +21,5 @@ Numerically computes a $\int_{a[i]}^{b[i]} f( x[i], y ) dy$ for `i ∈ 1:length(
   * `bs`: A vector of upper limits of integration of the 2nd argument of the function
 
 
-<a target='_blank' href='https://github.com/atteson/ParametricGK/blob/979158647f025bf89b95b2611457ce1fc951e29d/src/ParametricGK.jl#L15-L26' class='documenter-source'>source</a><br>
+<a target='_blank' href='https://github.com/atteson/ParametricGK/blob/99a8efe671d9c51a6c2ef13dd4f6cd886f62d522/src/ParametricGK.jl#L15-L30' class='documenter-source'>source</a><br>
 
