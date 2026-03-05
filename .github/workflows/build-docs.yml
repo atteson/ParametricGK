@@ -1,9 +1,0 @@
-name: Build Documentation
-
-on:
-	push
-
-jobs:
-	steps:
-		- name: Build docs
-		  run: julia docs/make.jl
