@@ -23,9 +23,9 @@ for `i ∈ 1:length(params)`.
 
 # Arguments
 * `f`: The function to integrate
-* `params`: A vector of parameters to use as the first argument of the function
-* `as`: A vector of lower limits of integration of the 2nd argument of the function
-* `bs`: A vector of upper limits of integration of the 2nd argument of the function
+* `x`: A vector of parameters to use as the first argument of the function
+* `a`: A vector of lower limits of integration of the 2nd argument of the function
+* `b`: A vector of upper limits of integration of the 2nd argument of the function
 
 """
 function parametricGK( f, params, as, bs;
